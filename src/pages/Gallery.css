@@ -1,0 +1,21 @@
+
+.gallery-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.gallery-header h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-subtitle,
+.gallery-description {
+  text-align: center;
+  width: 100%;
+}

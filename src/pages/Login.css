@@ -1,0 +1,251 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.auth-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f5e9ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-wrapper {
+  width: 100%;
+  max-width: 1150px;
+  min-height: 680px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fffaf9;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(83, 48, 61, 0.13);
+}
+
+.auth-visual {
+  position: relative;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background:
+    linear-gradient(180deg, rgba(37, 30, 35, .25), rgba(37, 30, 35, .78)),
+    url("https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.auth-visual-content {
+  max-width: 420px;
+}
+
+.auth-visual-content p,
+.auth-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #bd879b;
+}
+
+.auth-visual-content h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.auth-visual-content span {
+  color: #f3e9ed;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.auth-visual-bottom {
+  font-size: 13px;
+  color: #f6e9ee;
+}
+
+.auth-form-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 390px;
+}
+
+.auth-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  color: #49343c;
+  margin: 12px 0;
+}
+
+.auth-heading p {
+  color: #917c83;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.login-type-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 27px;
+}
+
+.login-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 13px;
+  border: 1px solid #ead8df;
+  background: white;
+  color: #755663;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-type.active {
+  background: #704b5b;
+  color: white;
+  border-color: #704b5b;
+}
+
+.auth-card form label {
+  display: block;
+  color: #59434c;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 17px 0 9px;
+}
+
+.auth-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  height: 53px;
+  border: 1px solid #ead8df;
+  border-radius: 10px;
+  color: #a47c8d;
+  background: white;
+}
+
+.auth-input:focus-within {
+  border-color: #a66c7c;
+  box-shadow: 0 0 0 3px rgba(166,108,124,.1);
+}
+
+.auth-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #49343c;
+  font-size: 14px;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  color: #927482;
+  cursor: pointer;
+  display: flex;
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 15px;
+  margin-top: 28px;
+  background: #704b5b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.auth-submit:hover {
+  background: #49343c;
+  transform: translateY(-2px);
+}
+
+.auth-switch {
+  text-align: center;
+  color: #8e7a82;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.auth-switch a {
+  color: #a66c7c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.admin-demo-info {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  margin-top: 22px;
+  background: #f6ebef;
+  color: #704b5b;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.admin-demo-info p {
+  margin-top: 5px;
+}
+
+.back-home-link {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #927482;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .auth-page {
+    padding: 15px;
+  }
+
+  .auth-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-visual {
+    min-height: 300px;
+    padding: 30px;
+  }
+
+  .auth-visual-content h1 {
+    font-size: 34px;
+  }
+
+  .auth-form-side {
+    padding: 35px 25px;
+  }
+}

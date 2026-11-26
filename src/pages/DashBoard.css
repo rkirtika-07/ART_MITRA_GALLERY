@@ -1,0 +1,511 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.portal-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f1f2;
+  color: #49343c;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SIDEBAR */
+
+.portal-sidebar {
+  width: 255px;
+  flex-shrink: 0;
+  min-height: 100vh;
+  padding: 30px 19px;
+  background: #49343c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 5px 8px 55px;
+}
+
+.portal-logo svg {
+  color: #e5b6c5;
+}
+
+.sidebar-caption {
+  color: #c9aab5;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0 12px 18px;
+}
+
+.portal-nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 13px;
+  margin-bottom: 8px;
+  color: #e9dce1;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.portal-nav svg {
+  width: 19px;
+  height: 19px;
+}
+
+.portal-nav:hover,
+.portal-nav.selected {
+  background: #795768;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 15px 5px;
+  border-top: 1px solid #755866;
+  margin-top: 25px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d6a2b4;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.sidebar-user strong {
+  display: block;
+  font-size: 12px;
+}
+
+.sidebar-user span {
+  display: block;
+  color: #c9aab5;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.portal-logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  background: transparent;
+  border: 1px solid #957784;
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.portal-logout:hover {
+  background: #795768;
+}
+
+/* MAIN CONTENT */
+
+.portal-main {
+  flex: 1;
+  min-width: 0;
+  padding: 30px 4%;
+}
+
+.portal-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+.portal-topbar p {
+  color: #a66c7c;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.portal-topbar h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-top: 7px;
+}
+
+.portal-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.portal-section {
+  margin: 38px 0;
+}
+
+/* USER WELCOME */
+
+.user-welcome-banner,
+.admin-welcome-banner {
+  min-height: 240px;
+  padding: 35px 40px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-welcome-banner {
+  background: linear-gradient(120deg, #e9cbd5, #f5e2e7);
+}
+
+.user-welcome-banner > div:first-child,
+.admin-welcome-banner > div:first-child {
+  max-width: 580px;
+}
+
+.user-welcome-banner span,
+.admin-welcome-banner span {
+  color: #936071;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.user-welcome-banner h1,
+.admin-welcome-banner h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 3vw, 39px);
+  margin: 14px 0;
+  color: #49343c;
+}
+
+.user-welcome-banner p,
+.admin-welcome-banner p {
+  color: #745963;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.welcome-decoration {
+  color: #a66c7c;
+  opacity: .7;
+  padding: 20px;
+}
+
+.portal-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 19px;
+  background: #704b5b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.portal-primary-btn:hover {
+  background: #49343c;
+}
+
+/* SECTION HEADINGS */
+
+.portal-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.portal-section-heading span {
+  color: #a66c7c;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.portal-section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+/* FEATURE CARDS */
+
+.portal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.portal-feature-card {
+  display: block;
+  padding: 25px;
+  background: #fffafa;
+  border: 1px solid #eedce1;
+  border-radius: 15px;
+  color: #49343c;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.portal-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(73, 52, 60, .09);
+  border-color: #d6a2b4;
+}
+
+.feature-icon,
+.stat-icon {
+  width: 47px;
+  height: 47px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #f2e1e7;
+  color: #966174;
+}
+
+.portal-feature-card h3 {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  margin: 18px 0 9px;
+}
+
+.portal-feature-card p {
+  color: #927e85;
+  font-size: 12px;
+  line-height: 1.7;
+  min-height: 40px;
+}
+
+.portal-feature-card > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #a66c7c;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+/* USER BOTTOM CARDS */
+
+.portal-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin: 35px 0;
+}
+
+.portal-info-card {
+  background: #fffafa;
+  border: 1px solid #eedce1;
+  border-radius: 13px;
+  padding: 22px;
+}
+
+.portal-info-card > svg {
+  color: #a66c7c;
+}
+
+.portal-info-card h3 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  margin: 13px 0;
+}
+
+.portal-info-card p,
+.portal-info-card > span {
+  color: #927e85;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.portal-info-card a {
+  display: inline-block;
+  color: #a66c7c;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 13px;
+}
+
+/* ADMIN */
+
+.admin-welcome-banner {
+  background: linear-gradient(120deg, #e6d4dc, #f3e8eb);
+  color: #49343c;
+}
+
+.admin-welcome-banner > svg {
+  color: #a66c7c;
+  opacity: .7;
+  flex-shrink: 0;
+}
+
+.admin-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.admin-stat-card {
+  padding: 22px;
+  background: #fffafa;
+  border: 1px solid #eedce1;
+  border-radius: 14px;
+}
+
+.admin-stat-card p {
+  color: #927e85;
+  font-size: 12px;
+  margin: 17px 0 8px;
+}
+
+.admin-stat-card h2 {
+  font-size: 29px;
+  color: #49343c;
+}
+
+.stat-icon {
+  width: 43px;
+  height: 43px;
+}
+
+.admin-avatar {
+  background: #a66c7c;
+}
+
+.portal-admin-note {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 22px;
+  background: #f2e5e9;
+  border-radius: 13px;
+  color: #704b5b;
+  margin: 35px 0;
+}
+
+.portal-admin-note h3 {
+  font-family: Georgia, serif;
+  margin-bottom: 6px;
+}
+
+.portal-admin-note p {
+  font-size: 12px;
+  color: #927e85;
+  line-height: 1.7;
+}
+
+.portal-footer {
+  text-align: center;
+  border-top: 1px solid #ead8df;
+  padding: 25px 5px;
+  margin-top: 35px;
+  color: #a18a93;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .admin-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portal-bottom-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .portal-layout {
+    flex-direction: column;
+  }
+
+  .portal-sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .portal-logo {
+    margin: 0 5px 25px;
+  }
+
+  .portal-nav {
+    padding: 11px;
+  }
+
+  .sidebar-bottom {
+    margin-top: 15px;
+  }
+
+  .portal-main {
+    padding: 25px 18px;
+  }
+
+  .portal-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .user-welcome-banner,
+  .admin-welcome-banner {
+    padding: 25px;
+  }
+
+  .welcome-decoration,
+  .admin-welcome-banner > svg {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .admin-stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portal-profile span {
+    display: none;
+  }
+
+  .portal-topbar h2 {
+    font-size: 20px;
+  }
+}

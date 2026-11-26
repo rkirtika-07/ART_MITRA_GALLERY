@@ -1,0 +1,86 @@
+.auction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.auction-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auction-image {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  background: #f3f0eb;
+}
+
+.auction-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.auction-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #a87950;
+  color: white;
+  padding: 7px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.auction-info {
+  padding: 20px;
+}
+
+.auction-artist {
+  color: #888;
+  font-size: 14px;
+}
+
+.auction-info h3 {
+  margin: 8px 0;
+}
+
+.auction-details {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.auction-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.auction-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.auction-bottom button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .auction-grid {
+    grid-template-columns: 1fr;
+  }
+}
